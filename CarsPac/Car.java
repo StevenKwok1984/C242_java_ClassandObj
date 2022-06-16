@@ -2,8 +2,8 @@ package CarsPac;
 
 public class Car {
 
-    private String make;
-    private String model;
+    private final String make;
+    private final String model;
     private int cc;
     private String colour;
     private int speed;
@@ -11,6 +11,7 @@ public class Car {
     public Car(String make, String model) {
         this(make, model, 0, "white");
     }
+
 
     public Car(String make, String model, int cc, String colour) {
         this.make = make;
@@ -49,6 +50,6 @@ public class Car {
     public int getSpeed() {
         return speed;
     }
-    
+
 
 }
