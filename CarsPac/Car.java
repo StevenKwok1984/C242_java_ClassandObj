@@ -24,6 +24,13 @@ public class Car {
                 getMake(), getModel(), getCc(), getColour(), getSpeed());
     }
 
+    public String toString() {
+        return getClass() + ": make = " + make +
+                ", model = " + model +
+                ", cc = " + cc +
+                ", speed = " + speed;
+    }
+
     public String getMake() {
         return make;
     }
@@ -42,10 +49,6 @@ public class Car {
     public int getSpeed() {
         return speed;
     }
-
-
-
-
-
+    
 
 }

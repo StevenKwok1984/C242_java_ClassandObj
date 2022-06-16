@@ -11,8 +11,7 @@ public class CarUser {
         Car car1 = new Car("VW", "Beetle", 1200, "pink");
         Car car2 = new Car("Merc", "C180", 2000, "grey");
         Car car3 = new Car("Ford", "Fiesta", 1600, "orange");
-
-        Car car4 = new Car("Toyota", "Cololla");
+        Car car4 = new Car("Toyota", "Corolla");
 
         Car cars[] = new Car[] {car1, car2, car3, car4};
         return cars;
@@ -29,6 +28,5 @@ public class CarUser {
         for (Car car : vehicles) {
             System.out.println(car.showCar());
         }
-
     }
 }
