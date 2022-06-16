@@ -18,7 +18,17 @@ public class CarUser {
         return cars;
     }
 
-    public void showCar(Car car) {
+    public void showCars(Car[] vehicles) {
+
+        for (int i = 0; i < vehicles.length; i++) {
+            Car car = vehicles[i];
+            System.out.println("i=" + i + " : " + car);
+        }
+        System.out.println();
+
+        for (Car car : vehicles) {
+            System.out.println(car.showCar());
+        }
 
     }
 }

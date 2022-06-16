@@ -19,9 +19,9 @@ public class Car {
         this.colour = colour;
     }
 
-    public static void showCar(Car car) {
-        System.out.printf("car: make=%s, model=%s, cc=%d, colour=%s, speed=%d")
-
+    public String showCar() {
+        return String.format("car: make=%s, model=%s, cc=%d, colour=%s, speed=%d %n",
+                getMake(), getModel(), getCc(), getColour(), getSpeed());
     }
 
     public String getMake() {
@@ -38,6 +38,9 @@ public class Car {
 
     public String getColour() {
         return colour;
+    }
+    public int getSpeed() {
+        return speed;
     }
 
 
