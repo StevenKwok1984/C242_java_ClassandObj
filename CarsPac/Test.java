@@ -28,7 +28,7 @@ public class Test {
         int object = 0;
 
         int[] ia = new int[15];
-        char[] ca = "some string";
+
 
         System.out.println(++z +z + x++ + y - y);
     }
